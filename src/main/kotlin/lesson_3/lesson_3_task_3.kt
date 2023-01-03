@@ -1,17 +1,18 @@
 package lesson_3
 
 fun main() {
-    val number = 3
+    val figure = 3
 
     println("""
-        $number x 1 = ${number * 1}
-        $number x 2 = ${number * 2}
-        $number x 3 = ${number * 3}
-        $number x 4 = ${number * 4}
-        $number x 5 = ${number * 5}
-        $number x 6 = ${number * 6}
-        $number x 7 = ${number * 7}
-        $number x 8 = ${number * 8}
-        $number x 9 = ${number * 9}
+        $figure x 1 = ${figure * 1}
+        $figure x 2 = ${figure * 2}
+        $figure x 3 = ${figure * 3}
+        $figure x 4 = ${figure * 4}
+        $figure x 5 = ${figure * 5}
+        
+        $figure x 6 = ${figure * 6}
+        $figure x 7 = ${figure * 7}
+        $figure x 8 = ${figure * 8}
+        $figure x 9 = ${figure * 9}
     """.trimIndent())
 }
