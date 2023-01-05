@@ -12,4 +12,5 @@ fun main() {
     else if (randomNumbers.contains(userNumber1) || randomNumbers.contains(userNumber2))
         println("Вы выиграли утешительный приз!")
     else println("Неудача! Крутите барабан!")
+    println("Выигрышные числа: ${randomNumbers[0]} и ${randomNumbers[1]}")
 }
