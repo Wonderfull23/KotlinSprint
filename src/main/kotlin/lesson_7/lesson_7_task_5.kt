@@ -5,9 +5,13 @@ fun main() {
     val passwordLength = readln().toInt()
     var password = ""
 
+    var chars = ""
+    for (i in '0'..'9') chars += i
+    for (i in 'a'..'z') chars += i
+    for (i in 'A'..'Z') chars += i
+
     for (i in 0 until passwordLength) {
-        val arr = arrayOf(('0'..'9').random(), ('A'..'Z').random(), ('a'..'z').random())
-        password += arr[(arr.indices).random()]
+        password += chars.random()
     }
     println("Your random password: $password")
 }
