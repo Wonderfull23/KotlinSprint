@@ -12,9 +12,9 @@ fun main() {
     }
 }
 
-fun throwTheDice() = listOf((1..6).random(), (1..6).random())
+private fun throwTheDice() = listOf((1..6).random(), (1..6).random())
 
-fun compareDice(userDice: List<Int>, computerDice: List<Int>) {
+private fun compareDice(userDice: List<Int>, computerDice: List<Int>) {
     when {
         userDice.sum() > computerDice.sum() -> println("Победило человечество")
         userDice.sum() < computerDice.sum() -> println("Победила машина")
