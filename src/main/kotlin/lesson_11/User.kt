@@ -1,6 +1,6 @@
 package lesson_11
 
-class User(
+class User1(
     private val id: Int,
     private val login: String,
     private var password: String,
