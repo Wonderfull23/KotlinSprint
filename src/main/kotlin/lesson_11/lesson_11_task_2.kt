@@ -1,7 +1,7 @@
 package lesson_11
 
 fun main() {
-    val user = User(
+    val user = User1(
         1234567,
         "JohnSnow",
         "loveNorth",
