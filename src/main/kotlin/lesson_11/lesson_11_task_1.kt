@@ -13,6 +13,6 @@ fun main() {
         "12345678",
         "returnthewall@mail.ru"
     )
-    println("User information: ${user1.toString()}")
-    println("User information: ${user2.toString()}")
+    println("User information: $user1")
+    println("User information: $user2")
 }
