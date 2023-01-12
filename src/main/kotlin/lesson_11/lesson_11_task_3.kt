@@ -1,22 +1,32 @@
 package lesson_11
 
 fun main() {
-    val room1 = Room(envelope = "Don'tPanicLogo.jpg", name = "Don't panic chat",
-        members = mutableListOf(Member(avatar = "Fire.jpg", nickname = "ievetrov"),
-        Member(avatar = "defaultAvatar.jpg", nickname = "Wonderfull23")))
+    val room1 = Room(
+        envelope = "Don'tPanicLogo.jpg", name = "Don't panic chat",
+        members = mutableListOf(
+            Member(avatar = "Fire.jpg", nickname = "ievetrov", badge = "разговаривает"),
+            Member(avatar = "defaultAvatar.jpg", nickname = "Wonderfull23", badge = "микрофон выключен")
+        )
+    )
 
-    val room2 = Room("BallLogo.jpg", "Room for great football players",
-        mutableListOf(Member("Messi.jpg", "Leo"), Member("Ronaldo.jpg", "CR7"),
-            Member("Shevchenko.jpg", "Sheva"), Member("Zidane.jpg", "Zizu")))
+    val room2 = Room(
+        envelope = "BallLogo.jpg", "Room for great football players",
+        members = mutableListOf(
+            Member(avatar = "Messi.jpg", nickname = "Leo", badge = "пользователь заглушен"),
+            Member(avatar = "Ronaldo.jpg", nickname = "CR7", badge = "разговаривает"),
+            Member(avatar = "Shevchenko.jpg", nickname = "Sheva", badge = "пользователь заглушен"),
+            Member(avatar = "Zidane.jpg", nickname = "Zizu", badge = "микрофон выключен")
+        )
+    )
 
-    val room3 =  Room("friendsLogo.jpg", "Room for friends",
-        mutableListOf(Member("cat.jpg", "Vova"), Member("puppy.jpg", "Sasha"),
-            Member("mem.jpg", "Anton"), Member("anime.jpg", "Denis")))
+    val room3 = Room(
+        envelope = "friendsLogo.jpg", "Room for friends",
+        members = mutableListOf(
+            Member(avatar = "cat.jpg", nickname = "Vova", badge = "микрофон выключен"),
+            Member(avatar = "puppy.jpg", nickname = "Sasha", badge = "разговаривает"),
+            Member(avatar = "mem.jpg", nickname = "Anton", badge = "микрофон выключен"),
+        )
+    )
 
-    val room4 =  Room("TonLogo.jpg", "Ton holders",
-        mutableListOf(Member("PrettyBody.jpg", "PavelDurov"), Member("HackerLogo.jpg", "Nikolai Durov"),
-            Member("SEC.jpg", "Gary Gensler"), Member("defaultAvatar.jpg", "Wonderfull23")))
-
-    val ribbon1 = (mutableListOf(room1, room2))
-    val ribbon2 = (mutableListOf(room3, room4))
+    val ribbon1 = (mutableListOf(room1, room2, room3))
 }
