@@ -5,8 +5,8 @@ fun main() {
 
     println("Введите количество порций:")
     val portions = readln().toInt()
-    for (i in ingredients.indices) ingredients[i] *= portions
-    println("На $portions порций вам понадобится: Яиц – ${ingredients[0]} шт.," +
-            "молока – ${ingredients[1]} гр.," +
-            "сливочного масла – ${ingredients[2]} гр.")
+    val allIngredients = ingredients.map { it * portions }
+    println("На $portions порций вам понадобится: Яиц – ${allIngredients[0]} шт.," +
+            "молока – ${allIngredients[1]} гр.," +
+            "сливочного масла – ${allIngredients[2]} гр.")
 }
