@@ -10,5 +10,4 @@ class Day3(
     fun printWeatherInfo() = println("Today is: day temperature: $dayTemperature°C, " +
                 "night temperature: $nightTemperature°C, " +
                 "was rain: $isRain, atmosphere pressure: $atmospherePressure mmHg at sea level")
-
 }
