@@ -1,10 +1,12 @@
 package lesson_13
 
 class PhoneDirectory(
-    val name: String,
-    val phoneNumber: String,
-    val company: String?,
+    private val contacts: MutableList<Contact>,
 ) {
-
-    fun printInfo() = println("Имя: $name\nНомер: $phoneNumber\nКомпания: ${company ?: "Не указано"}")
+    fun printDirectory() {
+        for (contact in contacts) {
+            contact.printInfo()
+            println()
+        }
+    }
 }
