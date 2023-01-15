@@ -1,7 +1,6 @@
 package lesson_4
 
 fun main() {
-    val numberOfDays = 5
     val day = 2
     val isEven = day % 2 == 0
     val arms = !isEven
