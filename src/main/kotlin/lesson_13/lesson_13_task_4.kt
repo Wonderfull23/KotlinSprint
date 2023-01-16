@@ -9,6 +9,7 @@ fun main() {
     )
     val phoneDirectory = PhoneDirectory(contacts)
 
+    phoneDirectory.printDirectory()
     phoneDirectory.addNewContact()
     phoneDirectory.printDirectory()
 }
