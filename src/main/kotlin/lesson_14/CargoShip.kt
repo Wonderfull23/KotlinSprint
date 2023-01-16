@@ -9,4 +9,12 @@ class CargoShip(
     enginePower: Int = 4000,
     canBreakIce: Boolean = false
 ) : Ship(name, speed, length, width, boxCapacity, enginePower, canBreakIce) {
+    fun takeInTow(ship: Ship){
+        println("Cargo ship $name takes ship ${ship.name} in tow ")
+        speed /= 2
+    }
+
+    fun rotateTowerCrane() {
+        println("Rotate the tower of the cran 15 degrees clockwise ")
+    }
 }
