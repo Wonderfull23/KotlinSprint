@@ -12,9 +12,9 @@ class Forum {
         return newUser
     }
 
-    fun newMessage(authorId: Int, message: String) {
+    fun newMessage(author: User, message: String) {
         for (user in users)
-            if (user.id == authorId) thread.add("${user.login}: $message")
+            if (user.id == author.id) thread.add("${user.login}: $message")
     }
 
     fun printThread() {

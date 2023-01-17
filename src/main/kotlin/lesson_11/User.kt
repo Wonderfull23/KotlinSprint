@@ -30,4 +30,5 @@ class User(
     fun sendMessage(message: String) {
         println(message)
     }
+
 }
