@@ -1,6 +1,6 @@
 package lesson_13
 
-class Contact(
+class Contact1(
     private val name: String?,
     private val phoneNumber: String?,
     private val company: String?,
