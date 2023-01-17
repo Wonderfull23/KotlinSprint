@@ -9,12 +9,4 @@ class IcebreakerShip(
     enginePower: Int = 6000,
     canBreakIce: Boolean = true,
 ) : Ship(name, speed, length, width, boxCapacity, enginePower, canBreakIce) {
-    fun breakIce() {
-        println("Icebreaker $name is breaking ice")
-        speed /= 2
-    }
-
-    fun measureTheIce() {
-        println("Sensors is measuring the ice thickness")
-    }
 }

@@ -1,12 +1,12 @@
 package lesson_14
 
-class CargoShip(
+class StandardShip(
     name: String,
-    speed: Int = 40,
-    length: Int = 300,
-    width: Int = 60,
-    boxCapacity: Int = 1000,
-    enginePower: Int = 4000,
+    speed: Int = 60,
+    length: Int = 100,
+    width: Int = 20,
+    boxCapacity: Int = 300,
+    enginePower: Int = 1000,
     canBreakIce: Boolean = false
 ) : Ship(name, speed, length, width, boxCapacity, enginePower, canBreakIce) {
 }

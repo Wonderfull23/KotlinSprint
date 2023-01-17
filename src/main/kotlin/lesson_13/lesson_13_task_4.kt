@@ -8,5 +8,8 @@ fun main() {
         Contact1("Алекс", null, "Ozon")
     )
     val phoneDirectory = PhoneDirectory(contacts)
+
+    phoneDirectory.printDirectory()
+    phoneDirectory.addNewContact()
     phoneDirectory.printDirectory()
 }

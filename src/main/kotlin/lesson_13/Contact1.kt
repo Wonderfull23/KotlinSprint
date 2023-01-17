@@ -8,6 +8,6 @@ class Contact1(
 
     fun printInfo() = println(
         "Имя: ${name ?: "Не указано"}\n" +
-        "Номер: ${phoneNumber ?: "Не указано"}\nКомпания: ${company ?: "Не указано"}"
+                "Номер: ${phoneNumber ?: "Не указано"}\nКомпания: ${company ?: "Не указано"}"
     )
 }

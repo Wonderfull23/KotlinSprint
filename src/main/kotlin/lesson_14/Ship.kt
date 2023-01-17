@@ -2,7 +2,7 @@ package lesson_14
 
 abstract class Ship(
     val name: String,
-    var speed: Int,
+    val speed: Int,
     val length: Int,
     val width: Int,
     val boxCapacity: Int,
