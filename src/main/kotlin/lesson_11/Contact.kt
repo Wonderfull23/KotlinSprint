@@ -1,42 +1,55 @@
 package lesson_11
 
-class Contact(
-    var avatar: String = "StandartLogo.png",
-    var contactName: String,
-    val closeFriendsHeaders: MutableList<String> = mutableListOf(),
-    val closeFriendsNames: MutableList<String> = mutableListOf(),
-    _mobilePhone: String,
-    _homePhone: String,
-    _iCloud: String,
-) {
-    var mobilePhone: String = _mobilePhone
+class Contact {
+
+    constructor(
+        avatar: String = "StandartLogo.png",
+        contactName: String,
+        closeFriendsHeaders: MutableList<String> = mutableListOf(),
+        closeFriendsNames: MutableList<String> = mutableListOf(),
+        mobilePhone: String,
+        homePhone: String,
+        iCloud: String,
+    ) {
+        this.avatar = avatar
+        this.contactName = contactName
+        this.closeFriendsHeaders = closeFriendsHeaders
+        this.closeFriendsNames = closeFriendsNames
+        this.mobilePhone = mobilePhone
+        this.homePhone = homePhone
+        this.iCloud = iCloud
+    }
+
+    var avatar: String
+    var contactName: String
+    var closeFriendsHeaders: MutableList<String>
+    var closeFriendsNames:  MutableList<String>
+
+    var mobilePhone: String
         set(value) {
             field = if (value.matches("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d".toRegex()))
                 "${value[0]} (${value.substring(1, 4)}) ${value.substring(4, 7)}" +
                         "-${value.substring(7, 9)}-${value.substring(9)}"
             else {
-                println("Неправильно введенный сотовый номер подсвечивается красным")
-                value
+                throw IllegalArgumentException("incorrect format")
             }
-
         }
-    var homePhone: String = _homePhone
+
+    var homePhone: String
         set(value) {
             field = if (value.matches("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d".toRegex()))
                 "${value[0]} (${value.substring(1, 4)}) ${value.substring(4, 7)}" +
                         "-${value.substring(7, 9)}-${value.substring(9)}"
             else {
-                println("Неправильно введенный домашний номер подсвечивается красным")
-                value
+                throw IllegalArgumentException("incorrect format")
             }
         }
 
-    var iCloud: String = _iCloud
+    var iCloud: String
         set(value) {
             field = if ('@' in value && '.' in value) value
             else {
-                println("Неправильно введенная электронная почта подсвечивается красным")
-                value
+                throw IllegalArgumentException("incorrect format")
             }
         }
 

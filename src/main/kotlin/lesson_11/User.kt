@@ -26,7 +26,6 @@ class User(
         println("Enter a new password:")
         password = readln()
     }
-
     fun sendMessage(message: String){
         println(message)
     }
