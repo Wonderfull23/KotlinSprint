@@ -1,23 +1,23 @@
 package lesson_11
 
 class User(
-    private val id: Int,
-    private val login: String,
-    private var password: String,
+    val id: Int,
+    val login: String,
+    var password: String,
     private val email: String,
-    private var bio: String = ""
+    private var bio: String = "",
 ) {
 
     override fun toString() = "id = $id, login = $login, password = $password, email = $email"
 
     fun printUserInformation() = println("User $login information: ${toString()}")
 
-    fun setBio(){
+    fun setBio() {
         println("Edit your bio:")
         bio = readln()
     }
 
-    fun changePassword(){
+    fun changePassword() {
         do {
             println("Enter your current password:")
             val checkPassword = readln()
@@ -27,7 +27,8 @@ class User(
         password = readln()
     }
 
-    fun sendMessage(message: String){
+    fun sendMessage(message: String) {
         println(message)
     }
+
 }
