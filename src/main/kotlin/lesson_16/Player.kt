@@ -11,23 +11,25 @@ class Player(
         println(("New player:\nname: $name\nhealth: $health hp\nstrength: $strength\n"))
     }
 
-    fun getDamage(damage: Int){
-        println("$name get $damage damage")
-        health -= damage
-        if (health <= 0) death()
-        printStatistics()
+    fun getDamage(damage: Int) {
+        if (health > 0) {
+            println("$name get $damage damage\n")
+            health -= damage
+            if (health <= 0) death()
+            printStatistics()
+        }
     }
 
     fun heal(hp: Int) {
-        if (!isDead){
-            println("$name heal $hp hp")
+        if (!isDead) {
+            println("$name heal $hp hp\n")
             health += hp
             if (health > 100) health = 100
             printStatistics()
         }
     }
 
-    private fun death(){
+    private fun death() {
         health = 0
         strength = 0
         isDead = true

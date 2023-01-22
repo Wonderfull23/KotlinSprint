@@ -7,5 +7,4 @@ fun main() {
     player.getDamage(80)
     player.heal(40)
     player.getDamage(100)
-    player.heal(10)
 }
