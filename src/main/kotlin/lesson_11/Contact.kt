@@ -1,7 +1,6 @@
 package lesson_11
 
 class Contact {
-
     constructor(
         avatar: String = "StandartLogo.png",
         contactName: String,
