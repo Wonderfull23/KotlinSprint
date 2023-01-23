@@ -1,4 +1,4 @@
-package lesson_16
+package lesson_17
 
 fun main() {
     val quiz = Quiz("Standard question", "gdfgd")

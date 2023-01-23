@@ -1,4 +1,4 @@
-package lesson_16
+package lesson_17
 
 class Quiz(_question: String, _answer: String) {
     var question = _question
