@@ -1,17 +1,9 @@
 package lesson_18
 
-abstract class Dice {
-    abstract fun getNumber(): Int
+abstract class Dice(private val side: Int) {
+    fun getNumber() = (1..side).random()
 }
 
-class Dice4 : Dice() {
-    override fun getNumber() = (1..4).random()
-}
-
-class Dice6 : Dice() {
-    override fun getNumber() = (1..6).random()
-}
-
-class Dice8 : Dice() {
-    override fun getNumber() = (1..8).random()
-}
+class Dice4(side: Int = 4) : Dice(side)
+class Dice6(side: Int = 6) : Dice(side)
+class Dice8(side: Int = 8) : Dice(side)
