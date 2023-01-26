@@ -1,10 +1,9 @@
 package lesson_19
 
-enum class Category {
-    CLOTHES,
-    STATIONERY,
-    OTHER;
+enum class Category(private val category: String) {
+    CLOTHES("Clothes"),
+    STATIONERY("Stationery"),
+    OTHER("Other");
 
-    fun getCategory(category: Category) =
-        category.name.toString()[0] + category.name.toString().substring(1).lowercase()
+    fun getCategory(category: Category) = category.category
 }

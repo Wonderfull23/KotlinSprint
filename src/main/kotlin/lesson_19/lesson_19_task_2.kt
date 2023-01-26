@@ -6,8 +6,8 @@ fun main() {
     jeans.printInfo()
     val pen = Product("Pen", id.getId(),  Category.STATIONERY)
     pen.printInfo()
-    val wallet = Product("Wallet", id.getId())
-    wallet.printInfo()
+    val lipstick = Product("Lipstick", id.getId())
+    lipstick.printInfo()
 }
 class Id{
     private var id = 0

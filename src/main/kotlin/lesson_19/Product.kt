@@ -7,4 +7,5 @@ class Product(
 ) {
 
     fun printInfo() = println("name: $name, id: $id, category: ${category.getCategory(category)}")
+
 }
