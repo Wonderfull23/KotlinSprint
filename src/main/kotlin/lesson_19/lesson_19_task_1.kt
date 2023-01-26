@@ -6,8 +6,8 @@ fun main() {
 }
 
 enum class Fish(val type: String){
-    Guppy("guppy"),
-    Angelfish("angel fish"),
-    Goldfish("gold fish"),
-    SiameseFightingFish("siamese fighting fish"),
+    GUPPY("guppy"),
+    ANGELFISH("angel fish"),
+    GOLDFISH("gold fish"),
+    SIAMESE_FIGHTING_FISH("siamese fighting fish"),
 }
