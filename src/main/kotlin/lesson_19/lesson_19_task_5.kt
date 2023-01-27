@@ -22,12 +22,10 @@ fun readSex(): Sex {
         when (readln().uppercase()) {
             Sex.MALE.name -> {
                 return Sex.MALE
-                break
             }
 
             Sex.FEMALE.name -> {
                 return Sex.FEMALE
-                break
             }
 
             else -> println("Enter Male or Female sex")
